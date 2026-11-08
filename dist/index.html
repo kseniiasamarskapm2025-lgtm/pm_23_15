@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Jhon Parker</title>
+    
+<!--Підключення стилів Bootstrap та власних стилів -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+    <div class="container my-4 d-print-none">
+        <div class="d-flex justify-content-between align-items-center p-3 bg-white rounded shadow-sm border">
+            <span class="fw-bold text-secondary">
+                <span class="badge bg-dark me-2"></span> Демо компонентів
+            </span>
+            <div class="btn-group" role="group" aria-label="Resume Actions">
+                <button type="button" onclick="window.print()" class="btn btn-outline-dark btn-sm">
+                     Надрукувати
+                </button>
+                <a href="#" class="btn btn-dark btn-sm">
+                     Завантажити PDF
+                </a>
+                <button type="button" class="btn btn-primary btn-sm position-relative">
+                     Зв'язатися
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 bg-white shadow p-4 p-md-5">
+        <div class="row">
+
+            <!--Ліва колонка -->
+            <div class="col-lg-4 border-end pe-lg-4 mb-4 mb-lg-0">
+
+                <!--Ім'я та професія -->
+                <div class="mb-5 ">
+                    <h1 class="fw-normal fs-1 text-dark mb-0 lh-1 ">Jhon</h1>
+                    <h1 class="fw-bolder fs-1 text-dark mb-2 lh-1">Parker</h1>
+                    <p class=" fw-semibold text-dark lh-1" style="letter-spacing: 1px;">UX Designer</p>
+                </div>
+
+                <!--Блок: Contact-->
+                <div class="mb-5">
+                    <h5 class="bg-dark text-white py-1 px-2 text-uppercase fs-6 fw-bold d-inline-block mb-3">Contact</h5>
+                        <p class="mb-0 fw-bolder text-dark fs-6">Phone</p>
+                        <p class="text-secondary small mb-3 fw-semibold">+000 123 456 789</p>
+
+                        <p class="mb-0 fw-bolder text-dark fs-6">Email</p>
+                        <p class="text-secondary small mb-3 fw-semibold">yourname@gmail.com</p>
+
+                        <p class="mb-0 fw-bolder text-dark fs-6">Address</p>
+                        <p class="text-secondary small mb-0 fw-semibold">Your Street Address</p>
+                        <p class="text-secondary small mb-0 fw-semibold">Town/City, zip code</p>
+                </div>
+
+                <!--Блок: Education-->
+                <div class="mb-5">
+                    <h5 class="bg-dark text-white py-1 px-2 text-uppercase fs-6 fw-bold d-inline-block mb-3">Education</h5>
+                    
+                    <div class="mb-3">
+                        <p class="text-secondary small mb-0 fw-semibold">Year: 2005-2007</p>
+                        <p class="fw-blod mb-0 text-secondary fw-semibold">Degree/Major Name</p>
+                        <p class="fw-blod mb-0 text-secondary fw-semibold">Your College name here</p>
+                    </div>
+
+                    <div>
+                        <p class="text-secondary small mb-0 fw-semibold">Year: 2005-2007</p>
+                        <p class="fw-blod mb-0 text-secondary fw-semibold">Degree/Major Name</p>
+                        <p class="fw-blod mb-0 text-secondary fw-semibold">Your College name here</p>
+                    </div>
+                </div>
+
+                <!--Блок: Reference-->
+                <div class="mb-4">
+                    <h5 class="bg-dark text-white py-1 px-2 text-uppercase fs-6 fw-bold d-inline-block mb-3">Reference</h5>
+
+                    <div class="md-3">
+                        <p class="fw-bolder md-0 text-dark">Jhon Smith</p>
+                        <p class="mb-0 text-muted small fw-semibold">Company Name / Title</p>
+                        <p class=" text-muted small fw-semibold">Phone: 0123 456 7890</p>
+                    </div>
+
+                    <div>
+                        <p class="fw-bolder md-0 text-dark">Jhon Smith</p>
+                        <p class="mb-0 text-muted small fw-semibold">Company Name / Title</p>
+                        <p class=" text-muted small fw-semibold">Phone: 0123 456 7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Права колонка -->
+            <div class="col-lg-8 ps-lg-4">
+
+                <!--Фото та блок About-->
+                <div class="mb-4">
+                    <div class="bg-dark rounded-3 overflow-hidden shadow">
+
+                        <div class="p-3 pt-3 pb-0 text-center">
+                            <img src="imgs/dog.jpg" alt="Jhon Parker" class="img-fluid rounded" style="height: 250px; object-fit: cover; width: 100%;">
+                        </div>
+
+                        <div class="p-4 text-white">
+                            <h5 class="bg-white text-dark py-1 px-3 text-uppercase fs-6 fw-bold d-inline-block mb-3 rounded-1">About</h5>
+                            <p class="text-light small mb-0 jh-base">I'm Parker consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Блок:Software Skill-->
+                <div class="mb-5">
+                    <h5 class="bg-dark text-white py-1 px-2 text-uppercase fs-6 fw-bold d-inline-block mb-3">Software Skill</h5>
+                    
+                    <!-- Adobe Photoshop -->
+                    <div class="d-flex align-items-center mb-2">
+                        <p class="text-secondary small mb-0 fw-semibold" style="width: 155px;">Adobe Photoshop</p>
+                        <div class="progress flex-grow-1 ms-2" style="height: 4px; max-width: 120px;">
+                            <div class="progress-bar bg-dark" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Adobe Illustrator -->
+                    <div class="d-flex align-items-center mb-2">
+                        <p class="text-secondary small mb-0 fw-semibold" style="width: 155px;">Adobe Illustrator</p>
+                        <div class="progress ms-2" style="height: 4px; width: 120px;">
+                            <div class="progress-bar bg-dark" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Adobe Indesign -->
+                    <div class="d-flex align-items-center mb-2">
+                        <p class="text-secondary small mb-0 fw-semibold" style="width: 155px;">Adobe Indesign</p>
+                        <div class="progress ms-2" style="height: 4px; width: 120px;">
+                            <div class="progress-bar bg-dark" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Microsoft Office -->
+                    <div class="d-flex align-items-center mb-2">
+                        <p class="text-secondary small mb-0 fw-semibold" style="width: 155px;">Microsoft Office</p>
+                        <div class="progress ms-2" style="height: 4px; width: 120px;">
+                            <div class="progress-bar bg-dark" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- MS Powerpoint -->
+                    <div class="d-flex align-items-center mb-2">
+                        <p class="text-secondary small mb-0 fw-semibold" style="width: 155px;">MS Powerpoint</p>
+                        <div class="progress ms-2" style="height: 4px; width: 120px;">
+                            <div class="progress-bar bg-dark" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Блок: Experience -->
+                <div class="mb-4">
+                    <h5 class="bg-dark text-white py-1 px-2 text-uppercase fs-6 fw-bold d-inline-block mb-3">Experience</h5>
+                    
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-0 text-dark">Senior UX Designer</h6>
+                        <p class="text-muted small mb-1 fw-semibold">Company Name / Location / 2019 - present</p>
+                        <p class="small text-secondary fw-semibold">
+                            Lorem ipsum dolor sit amet, this is a thena consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magand na aliqua. Ut enim ad minim.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h6 class="fw-bold mb-0 text-dark ">Junior UX Designer</h6>
+                        <p class="text-muted small mb-1 fw-semibold">Company Name / Location / 2015-2019</p>
+                        <p class="small text-secondary fw-semibold">
+                            Lorem ipsum dolor sit amet, this is a thena consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magand na aliqua. Ut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипти Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
