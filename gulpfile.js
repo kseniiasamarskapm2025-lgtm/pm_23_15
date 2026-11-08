@@ -2,6 +2,7 @@ const { src, dest, series, parallel, watch } = require('gulp');
 const fileInclude = require('gulp-file-include');
 const sass = require('gulp-sass')(require('sass'));
 const cssnano = require('gulp-cssnano');
+const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
 
@@ -16,11 +17,12 @@ function html() {
         .pipe(browserSync.stream());
 }
 
-// Таск для компіляції власних SCSS у CSS та мініфікації
+// Таск для компіляції SCSS у єдиний мінімізований index.min.css
 function styles() {
-    return src('src/app/scss/**/*.scss')
+    return src('src/app/scss/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(cssnano())
+        .pipe(rename('index.min.css'))
         .pipe(dest('dist/css'))
         .pipe(browserSync.stream());
 }
@@ -67,7 +69,7 @@ function serve() {
     watch('src/app/imgs/**/*', images);
 }
 
-// Експорт тасків за замовчуванням (додано bootstrapCss та bootstrapJs)
+// Експорт тасків за замовчуванням
 exports.default = series(
     parallel(html, styles, bootstrapCss, bootstrapJs, scripts, images),
     serve

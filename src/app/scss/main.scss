@@ -1,0 +1,7 @@
+// Спочатку підключаємо змінні та міксіни, щоб інші файли їх бачили
+@import 'variables';
+
+// Потім самі модулі (партишали)
+@import 'header';
+@import 'sidebar';
+@import 'footer';

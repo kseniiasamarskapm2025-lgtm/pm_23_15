@@ -1,0 +1,25 @@
+// Специфічні стилі для навичок та досвіду
+.skills-section {
+  .skill-title {
+    width: 155px;
+  }
+
+  .progress {
+    height: 4px;
+    max-width: 120px;
+    
+    .progress-bar {
+      background-color: #212529;
+    }
+  }
+}
+
+.experience-section {
+  .experience-item {
+    margin-bottom: 1.5rem;
+
+    h6 {
+      color: #212529;
+    }
+  }
+}
